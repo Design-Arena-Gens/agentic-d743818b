@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080712;
+  --foreground: #f6f5ff;
+  --accent: #ff4dd8;
+  --accent-soft: rgba(255, 77, 216, 0.18);
+  --highlight: #7f71ff;
+  --font-base: var(--font-sans);
+  --font-display-stack: var(--font-display);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-base);
+  --font-display: var(--font-display-stack);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-base);
+  min-height: 100vh;
+}
